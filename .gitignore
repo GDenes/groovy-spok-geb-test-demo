@@ -1,0 +1,75 @@
+# Groovy
+user.gradle
+.gradle/
+target/
+build/
+out/
+
+*.DS_Store
+*.class
+*.swp
+*~
+
+.idea
+*.iml
+*.ipr
+*.iws
+.shelf
+
+.settings/
+.classpath
+.project
+bin/
+
+# Geb
+target
+*.tmproj
+.DS_Store
+build
+.gradle
+*.iws
+build.sh
+*.log
+*.iml
+.idea
+out
+*.ipr
+*.hprof
+
+# Gradle
+.gradle/
+build/
+
+# Maven
+target/
+
+# IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# Grails
+stacktrace.log
+
+# Documentation
+/docs/_build/
+
+# Mac
+.DS_Store
+
+# Shippable CI
+/shippable/
+
+Foo.*
+/.shelf/
+
+# Allure
+allure-results
