@@ -36,7 +36,6 @@ class ElementsSpec extends GebSpec {
         then: "upload the file"
         uploadAndDownloadPage.uploadSampleFile(LOCAL_FILE_PATH)
         uploadAndDownloadPage.getFIlePathText().contains(UPLOADED_FILE_PATH)
-
     }
 
 }

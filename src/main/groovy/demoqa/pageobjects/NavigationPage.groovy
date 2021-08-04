@@ -22,7 +22,8 @@ class NavigationPage extends AbstractPage {
 
     WidgetsPage navigateToWidgetsPage() {
         logger.info("Navigating to `Widgets` page")
-
+        widgets.click()
+        browser.page(WidgetsPage)
     }
 
     ElementsPage navigateToElementsPage() {
@@ -33,6 +34,7 @@ class NavigationPage extends AbstractPage {
 
     InteractionsPage navigateToInteractionsPage() {
         logger.info("Navigating to `Interactions` page")
-
+        interactions.click()
+        browser.page(InteractionsPage)
     }
 }
