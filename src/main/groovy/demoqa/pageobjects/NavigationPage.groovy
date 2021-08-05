@@ -3,7 +3,6 @@ package demoqa.pageobjects
 import demoqa.pageobjects.elementspage.ElementsPage
 import demoqa.pageobjects.iteractionspage.InteractionsPage
 import demoqa.pageobjects.widgetspage.WidgetsPage
-import geb.Browser
 import org.openqa.selenium.By
 import pagebase.pageobjects.AbstractPage
 

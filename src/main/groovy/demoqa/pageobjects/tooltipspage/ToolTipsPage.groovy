@@ -1,7 +1,6 @@
 package demoqa.pageobjects.tooltipspage
 
 import geb.navigator.Navigator
-import org.openqa.selenium.By
 import pagebase.pageobjects.AbstractPage
 
 class ToolTipsPage extends AbstractPage {
@@ -18,14 +17,14 @@ class ToolTipsPage extends AbstractPage {
         toolTipText { $(".tooltip-inner") }
     }
 
-    String hoverWebElementAndGetToolTipText() {
+    String hoverWebElementAndGetToolTipText(Navigator element) {
         sleep(1000)
         interact {
-            moveToElement(toolTipButton)
+            moveToElement(element)
             perform()
         }
         waitFor { toolTipText.displayed }
-        return  toolTipText.text()
+        return toolTipText.text()
     }
 
 }
