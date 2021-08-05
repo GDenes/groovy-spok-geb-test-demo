@@ -19,14 +19,13 @@ class ToolTipsPage extends AbstractPage {
     }
 
     String hoverWebElementAndGetToolTipText() {
+        sleep(1000)
         interact {
-            pause(5)
             moveToElement(toolTipButton)
-//            pause(10)
             perform()
         }
-//        waitFor { toolTipText.displayed }
-//        toolTipText.text()
+        waitFor { toolTipText.displayed }
+        return  toolTipText.text()
     }
 
 }

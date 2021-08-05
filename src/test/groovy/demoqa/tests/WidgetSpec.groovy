@@ -8,9 +8,9 @@ import demoqa.pageobjects.widgetspage.WidgetsPage
 import geb.spock.GebSpec
 import spock.lang.Shared
 
-import javax.tools.Tool
-
 class WidgetSpec extends GebSpec {
+
+    String HOVERED_BUTTON_TEXT = 'You hovered over the Button'
 
     @Shared
     WidgetsPage widgetsPage
@@ -20,14 +20,11 @@ class WidgetSpec extends GebSpec {
         widgetsPage = navigationPage.navigateToWidgetsPage()
     }
 
-    def "Drag and drop"() {
-        given: "Navigating to `Dynamic Properties page`"
+    def "Tool tips test"() {
+        when: "Navigating to `Dynamic Properties page`"
         ToolTipsPage toolTipsPage = widgetsPage.navigateToToolTipsPage()
 
-        when:
-        toolTipsPage.hoverWebElementAndGetToolTipText()
-
         then: "expected"
-
+        toolTipsPage.hoverWebElementAndGetToolTipText() == HOVERED_BUTTON_TEXT
     }
 }
